@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mtc-operator
+  name: quay-operator
   namespace: openshift-gitops
   finalizers:
   - resources-finalizer.openshift-gitops.argoproj.io
 spec:
   destination:
-    namespace: mtc-operator
+    namespace: quay-operator
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: mtc-operator
+    path: quay-operator
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
