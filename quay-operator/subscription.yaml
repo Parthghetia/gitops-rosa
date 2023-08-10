@@ -4,7 +4,7 @@ metadata:
   name: quay-operator
   namespace: quay-operator
 spec:
-  channel: stable-v1
+  channel: patch-me-see-overlays-dir
   installPlanApproval: Automatic
   name: quay-operator
   source: redhat-operators
