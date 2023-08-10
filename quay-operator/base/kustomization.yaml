@@ -5,5 +5,5 @@ resources:
   - namespace.yaml
   - operator-group.yaml
   - subscription.yaml
-  - /overlays/quay-v3.4
+  - quay-v3.5
   
