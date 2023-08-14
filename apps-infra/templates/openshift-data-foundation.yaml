@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: openshift-storage-operator
+  name: openshift-data-foundation
   namespace: openshift-gitops
   finalizers:
   - resources-finalizer.openshift-gitops.argoproj.io
 spec:
   destination:
-    namespace: openshift-storage
+    namespace: openshift-local-storage
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: openshift-storage-operator
+    path: openshift-data-foundation
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
