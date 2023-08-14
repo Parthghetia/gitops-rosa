@@ -5,4 +5,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - operator-group.yaml
-  - subscription.yaml
+  - subscription-ocs.yaml
+  - subscription-odf.yaml
+  - storage-cluster.yaml
