@@ -7,5 +7,5 @@ spec:
   channel: alpha
   installPlanApproval: Automatic
   name: ocs-operator
-  source: redhat-operators
+  source: ocs-catalogsource
   sourceNamespace: openshift-marketplace
