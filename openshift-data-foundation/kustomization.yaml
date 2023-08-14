@@ -7,4 +7,3 @@ resources:
   - operator-group.yaml
   - subscription-ocs.yaml
   - subscription-odf.yaml
-  - storage-cluster.yaml
