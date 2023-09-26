@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: acm
+  namespace: openshift-gitops
+  finalizers:
+  - resources-finalizer.openshift-gitops.argoproj.io
+spec:
+  destination:
+    namespace: open-cluster-management
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: acm-instance
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
