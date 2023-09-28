@@ -14,5 +14,5 @@ subjects:
     kind: User
     name: system:admin
   - apiGroup: rbac.authorization.k8s.io
-    kind: User
+    kind: ServiceAccount
     name: system:openshift-gitops-argocd-application-controller
