@@ -14,5 +14,5 @@ subjects:
     kind: User
     name: system:admin
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-application-controller
+    name: system:openshift-gitops-argocd-application-controller
     namespace: openshift-gitops
